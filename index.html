@@ -341,166 +341,15 @@
 
       
         
-          
-            <p>本文转自<br><a href="https://www.zhihu.com/question/29213027/answer/67568607" title="[external] [title]" target="_blank" rel="noopener">如何写一份易用的产品需求文档？ - 觅路客的回答 - 知乎</a></p>
-<h2 id="一、什么是PRD"><a href="#一、什么是PRD" class="headerlink" title="一、什么是PRD"></a>一、什么是PRD</h2><p>PRD为Product Requirement Document的简称，其中文翻译为：产品需求文档。该文档是产品项目由“概念化”阶段进入到“图纸化”阶段的最主要的一个文档。当然，这个定义针对的是一个全新的产品。广义上来讲，产品需求的描述，应该包含有产品的战略和战术，战略是指：产品定位、目标市场、目标用户、竞争对手等。战术是指产品的结构、核心业务流程、具体用例描述、功能&amp;内容描述等，本文主要讨论的是战术部分。</p>
-<p>PRD的主要使用对象有：开发、测试、项目经理、交互设计师、运营及其他业务人员。开发可以根据PRD获知整个产品的逻辑；测试可以根据PRD建用例；项目经理可以根据PRD拆分工作包，并分配开发人员；交互设计师可以通过PRD来设计交互细节。PRD是项目启动之前，必须要通过评审确定的最重要文档。</p>
-<p>PRD的主要使用对象有：开发、测试、项目经理、交互设计师、运营及其他业务人员。开发可以根据PRD获知整个产品的逻辑；测试可以根据PRD建用例；项目经理可以根据PRD拆分工作包，并分配开发人员；交互设计师可以通过PRD来设计交互细节。PRD是项目启动之前，必须要通过评审确定的最重要文档。</p>
-<h2 id="二、写作的逻辑"><a href="#二、写作的逻辑" class="headerlink" title="二、写作的逻辑"></a>二、写作的逻辑</h2><p>写PRD，其实就是一个产品的业务需求分析过程，最近在看一本书，叫《火球UML大战需求分析》，里面提到了需求分析过程，作者的这个需求分析思路是基于传统软件/系统，但是我觉得这种思路是相通的，可以应用于所有产品。我根据这个思路，做了部分改良，形成了以下的逻辑：</p>
-<ol>
-<li>整理产品结构</li>
-<li>分析核心业务流程</li>
-<li>分析及整理用例</li>
-<li>分析及整理非功能性需求</li>
-<li>整理需求文档并评审</li>
-</ol>
-<h3 id="1-整理产品结构"><a href="#1-整理产品结构" class="headerlink" title="1.整理产品结构"></a>1.整理产品结构</h3><p>就像修建一座商场，在设计的时候，需要考虑整个商场的结构，商场包含美食区、服装区、百货区、休闲娱乐区等，然后每个区域又可以按商家或类型细分。产品也是这个道理，产品是由功能和内容组成，这些功能和内容，按照某种纬度，组成频道/模块，最终形成产品的整体结构。由于产品的结构一般比较大，这里仅以产品结构中的个人中心这个模块为例：<br>产品结构一般通过MindManger梳理。需要注意的是，产品结构≠页面结构，产品结构是逻辑上的，页面结构是物理上的，至于具体的结构和方法，可以参看《用户体验要素》一书。</p>
-<h3 id="2-分析核心业务流程"><a href="#2-分析核心业务流程" class="headerlink" title="2.分析核心业务流程"></a>2.分析核心业务流程</h3><p>每个产品，都会有几个核心的业务，分析并梳理出几个核心业务流程，可以帮助产品经理了解产品逻辑。笔者做的是B端产品，核心业务流程一般都会涉及到多个角色，而C端产品，核心流程的用户则比较单一。涉及到多个角色的业务流程，可以使用泳道图，单个角色可以使用普通的活动图。另外，在分析业务流程的时候，还可以配合使用状态图和顺序图，具体使用什么工具，视情况而定，重点是梳理清楚逻辑。</p>
-<h3 id="3-分析及整理用例"><a href="#3-分析及整理用例" class="headerlink" title="3.分析及整理用例"></a>3.分析及整理用例</h3><p>这个步骤是更具体，也很重要的的一步，前面2个步骤确定了范围和流程，这一步针对流程上的某个节点来具体描述。以会员中心→内容管理这个模块为例，这个模块下面包含的用例有：</p>
-<ul>
-<li>新增文章</li>
-<li>修改文章</li>
-<li>删除文章</li>
-<li>查看文章列表</li>
-<li>查看文章详情<br>现在，就可以按照上面这个列表，来一一的描述用例。<br>一个完整的用例应该包含以下主要内容：<img src="https://pic4.zhimg.com/80/204786f7aeda5640c18c432566bf3507_hd.jpg">
-</li>
-</ul>
-<p>在描述需求时，有2种方式，一种是用例描述，另外一种是功能点描述。用例描述和功能点描述最大的区别在于，描述的角度不一样，用例是从人和系统/产品的旁观者来描述，而功能点是从系统/产品的角度来描述。通过用例描述需求，最好用文档，并且有统一的用例模板，而功能描述只需要在Axure里，以注释的方式描述即可。</p>
-<p>其实，关于需求怎么描述，没有完全正确的方式，只有最合适的方式，具体因人而异。《启示录》一书作者就建议描述产品需求只需要高保真原型+注释就可以，完全不需要文档，以下是书中的一些观点：</p>
-<blockquote><p>产品说明（需求）文档的主体应该是高保真原型，由它体现产品的功能需求、信息架构、用户体验、交互设计、视觉设计。高保证原型最大的优势是可以用于测试。<br>与其花几个星期撰写冗长的Word文档，既没人读，也无法测试，还不如和设计师一起创建原型。</p>
-</blockquote>
-<p>详细内容可以参看这本书的第十八章，「重新定义产品说明文档」一节。<br>不管是用例描述还是功能描述，规则都是最重要的一部分，这里主要讲一下如何描述能完整无误的阐述需求并让阅读者看懂。规则的描述，主要是从3方面思考。</p>
-<ul>
-<li>数据规则。主要指页面从数据库调取数据并展现的规则，比如查看文章列表这个用例，需要描述文章列表页面展示哪些字段、每个字段的类型及长度、列表的排序规则刷新频率等。</li>
-<li>状态逻辑。文章不同状态之间切换的触发点是什么，比如状态为已发布的文章，要变为下架，可能的触发条件有：发布时间已过期、手动操作下架等。</li>
-<li>交互规则。界面上存在交互的元素，一一列举并说明，比如链接、按钮、滑动、下拉的具体交互规则及异常处理。另外，整个场景由于网络问题、系统问题导致的异常也需要说明。</li>
-</ul>
-<h3 id="4-分析及整理非供恩那个性需求"><a href="#4-分析及整理非供恩那个性需求" class="headerlink" title="4.分析及整理非供恩那个性需求"></a>4.分析及整理非供恩那个性需求</h3><p>非功能需求涉及比较广，比如产品的性能需求，访问速度达到多少、最大能支持多少人同时访问；比如设计需求，产品要设计成小清新风格还是成熟稳重的风格等；还比如统计需求，产品要统计哪些字段，形成哪些报表等。这个可以根据具体的需求来描述。</p>
-<h3 id="5-整理需求文档并品审"><a href="#5-整理需求文档并品审" class="headerlink" title="5.整理需求文档并品审"></a>5.整理需求文档并品审</h3><p>当完成以上4个步骤以后，整个产品的逻辑已经很清楚了，再将产出物汇总，就可以整理出需求文档。文档出来后，需要和项目相关的负责人一起评审，评审确认通过，就可以进入产品的实施阶段。实施一般是由项目经理负责，但是很多公司没有配备该岗位，这就要求产品经理拥有项目管理的能力，来推动产品顺利实施并上线。</p>
-<h2 id="三、PRD文档的格式"><a href="#三、PRD文档的格式" class="headerlink" title="三、PRD文档的格式"></a>三、PRD文档的格式</h2><p>目前市面上各种需求文档，五花八门，千万不要试图找到一个100%完美的文档模版，PRD文档，只有最合适的，没有最好的，每个人所在的公司背景都不一样，大公司要求文档规范，细节到位，小公司可能只需要记录关键信息，剩余的靠口头沟通，甚至都不需要文档。还有些人，直接通过Axure描述产品需求。</p>
-<p>PRD文档，最重要的还是以上的整个思考和整理的过程，当以上步骤梳理清楚后，文档只是水到渠成的产出。我的原则是，只要内容清楚，文档格式没那么重要。</p>
-<h2 id="四、写在最后"><a href="#四、写在最后" class="headerlink" title="四、写在最后"></a>四、写在最后</h2><p>产品经理需要做产品的战术执行和战略计划工作，我认为这两个工作是个递进的关系，当你能把产品的战术执行到位，真正的把一款产品从0到1做出来的时候，再去思考产品的创新、规划……产品才容易落地，否则，永远是纸上谈兵。这也是为什么很多产品助力刚开始到公司都只接一些功能模块的设计实施工作，而不是一来就做战略方面的工作。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/gitblog/2018/03/07/每天记录一张黑白图/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="林潼">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/gitblog/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="TongL1992">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/gitblog/2018/03/07/每天记录一张黑白图/" itemprop="url">每天记录一张黑白图</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-07T15:11:31+08:00">
-                2018-03-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="20180307"><a href="#20180307" class="headerlink" title="20180307"></a>20180307</h2><!-- <img src="/gitblog/path/img" class="[class names]" title="[300px] [300px] [20180317 这一天的记录 [alt text]]"> –&gt;-->
-          
+          <p>本文转自<br><a href="https://www.zhihu.com/question/29213027/answer/67568607" title="[external] [title]" target="_blank" rel="noopener">如何写一份易用的产品需求文档？ - 觅路客的回答 - 知乎</a></p>
+<h2 id="一、什么是PRD"><a href="#一、什么是PRD" class="headerlink" title="一、什么是PRD"></a>一、什么是PRD</h2><p>PRD为Product Requirement Document的简称，其中文翻译为：产品需求文档。该文档是产品项目由“概念化”阶段进入到“图纸化”阶段的最主要的一个文档。当然，这个定义针对的是一个全新的产品。广义上来讲，产品需求的描述，应该包含有产品的战略和战术，战略是指：产品定位、目标市场、目标用户、竞争对手等。战术是指产品的结构、核心业务流程、具体用例描述、功能&amp;内容描述等，本文主要讨论的是战术部分。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/gitblog/2018/03/09/产品需求文档的写作方式/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -833,7 +682,7 @@
               
                 <a href="/gitblog/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -846,7 +695,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/gitblog/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
