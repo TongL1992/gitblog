@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="产品 通知系统," />
 
 
 
@@ -81,13 +81,38 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="TongL1992">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="本文转自Web网站通知系统设计 - 老曹 - 人人都是产品经理 写在前面： 通知系统是网站信息传播机制的重要的一部分，足够写一大章来说明。本文只梳理设计原则，后续相关内容会持续更新。 这里的通知包括但不限于公告、提醒或消息（不同使用场景下的功能定义不同）。 关于各客户端平台（ios、android、wp等）的通知机制，在其交互设计指南中有更详细的说明，大家可自行参考。  1、通知系统定义通知系统，">
+<meta name="keywords" content="产品 通知系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web网站通知系统设计">
+<meta property="og:url" content="http://yoursite.com/2018/03/15/Web网站通知系统设计/index.html">
 <meta property="og:site_name" content="TongL1992">
+<meta property="og:description" content="本文转自Web网站通知系统设计 - 老曹 - 人人都是产品经理 写在前面： 通知系统是网站信息传播机制的重要的一部分，足够写一大章来说明。本文只梳理设计原则，后续相关内容会持续更新。 这里的通知包括但不限于公告、提醒或消息（不同使用场景下的功能定义不同）。 关于各客户端平台（ios、android、wp等）的通知机制，在其交互设计指南中有更详细的说明，大家可自行参考。  1、通知系统定义通知系统，">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/00f141e0dabf7247e94b92c11e6d3b8b.jpg">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/5593619d6b9d93f9e4bef5d63752feb7.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/0c4ea8216b8dcf89e919ab5f48ef506e.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/a8485562aba2a901dbafbf06bb056e5d.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/922a850f97ea7fe53e490e8c8e37150b.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/99cfabf04a53a0985b494c51733553b5.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/214d27835ae18e69b76bb50732d17ff3.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/ca1dcf18ea63fb053d71ad49c55256af.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/7d615ba7033e42e14567d5099eed3250.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/ad82ff2d36abd30cbfa68fd7c8328d39.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/097d0127c4c4f607652a2a6464db8999.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/d6024b7e461d13abf296f39696ca7217.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/e2c5c9a895ba51e2ad4f9c3537b74a39.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/eaeb59cc331626df636f9dd4b8d8c2b0.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/662d339ee6f9e372c9e05e91b0408551.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/c7a454a98e170c0b683f70dee6900f67.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/17a554f7086a04333f2b52730dd8e93b.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/836d76ee1aac2d67df901adc9883e032.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2013/07/7ba040fcd36cbc34d7b56c91b9b8303a.png">
+<meta property="og:updated_time" content="2018-03-15T03:14:01.093Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TongL1992">
+<meta name="twitter:title" content="Web网站通知系统设计">
+<meta name="twitter:description" content="本文转自Web网站通知系统设计 - 老曹 - 人人都是产品经理 写在前面： 通知系统是网站信息传播机制的重要的一部分，足够写一大章来说明。本文只梳理设计原则，后续相关内容会持续更新。 这里的通知包括但不限于公告、提醒或消息（不同使用场景下的功能定义不同）。 关于各客户端平台（ios、android、wp等）的通知机制，在其交互设计指南中有更详细的说明，大家可自行参考。  1、通知系统定义通知系统，">
+<meta name="twitter:image" content="http://image.woshipm.com/wp-files/2013/07/00f141e0dabf7247e94b92c11e6d3b8b.jpg">
 
 
 
@@ -117,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/15/Web网站通知系统设计/"/>
 
 
 
 
 
-  <title>TongL1992</title>
+  <title>Web网站通知系统设计 | TongL1992</title>
   
 
 
@@ -142,8 +167,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -256,9 +280,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -288,9 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/gitblog/2018/03/15/Web网站通知系统设计/" itemprop="url">Web网站通知系统设计</a></h1>
+          <h1 class="post-title" itemprop="name headline">Web网站通知系统设计</h1>
         
 
         <div class="post-meta">
@@ -340,9 +362,7 @@
       
 
       
-        
-          
-            <p>本文转自<br><a href="http://www.woshipm.com/pd/32652.html" title="[external] [title]" target="_blank" rel="noopener">Web网站通知系统设计 - 老曹 - 人人都是产品经理</a></p>
+        <p>本文转自<br><a href="http://www.woshipm.com/pd/32652.html" title="[external] [title]" target="_blank" rel="noopener">Web网站通知系统设计 - 老曹 - 人人都是产品经理</a></p>
 <blockquote><p>写在前面： 通知系统是网站信息传播机制的重要的一部分，足够写一大章来说明。本文只梳理设计原则，后续相关内容会持续更新。 这里的通知包括但不限于公告、提醒或消息（不同使用场景下的功能定义不同）。 关于各客户端平台（ios、android、wp等）的通知机制，在其交互设计指南中有更详细的说明，大家可自行参考。</p>
 </blockquote>
 <h2 id="1、通知系统定义"><a href="#1、通知系统定义" class="headerlink" title="1、通知系统定义"></a>1、通知系统定义</h2><p>通知系统，顾名思义即通知信息的传达处理系统。目的是为了让用户获得需要得到的消息及提醒并进行处理。</p>
@@ -428,8 +448,6 @@
 <li>大的原则，如优先级、全盘考虑、预留接口、数据统计等讲出来太空，还不如不说</li>
 </ol>
 
-          
-        
       
     </div>
     
@@ -444,263 +462,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/gitblog/2018/03/09/产品需求文档的写作方式/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="林潼">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/gitblog/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="TongL1992">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/gitblog/2018/03/09/产品需求文档的写作方式/" itemprop="url">产品需求文档的写作方式</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-09T11:11:59+08:00">
-                2018-03-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/gitblog/tags/产品-通知系统/" rel="tag"># 产品 通知系统</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p>本文转自<br><a href="https://www.zhihu.com/question/29213027/answer/67568607" title="[external] [title]" target="_blank" rel="noopener">如何写一份易用的产品需求文档？ - 觅路客的回答 - 知乎</a></p>
-<h2 id="一、什么是PRD"><a href="#一、什么是PRD" class="headerlink" title="一、什么是PRD"></a>一、什么是PRD</h2><p>PRD为Product Requirement Document的简称，其中文翻译为：产品需求文档。该文档是产品项目由“概念化”阶段进入到“图纸化”阶段的最主要的一个文档。当然，这个定义针对的是一个全新的产品。广义上来讲，产品需求的描述，应该包含有产品的战略和战术，战略是指：产品定位、目标市场、目标用户、竞争对手等。战术是指产品的结构、核心业务流程、具体用例描述、功能&amp;内容描述等，本文主要讨论的是战术部分。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/gitblog/2018/03/09/产品需求文档的写作方式/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/gitblog/2018/03/09/产品需求文档的写作方式/" rel="next" title="产品需求文档的写作方式">
+                <i class="fa fa-chevron-left"></i> 产品需求文档的写作方式
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/gitblog/2018/02/22/2017年的回顾与2018年的展望/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="林潼">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/gitblog/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="TongL1992">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/gitblog/2018/02/22/2017年的回顾与2018年的展望/" itemprop="url">2017年的回顾与2018年的展望</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-22T09:39:15+08:00">
-                2018-02-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h2 id="17年上半年"><a href="#17年上半年" class="headerlink" title="17年上半年"></a>17年上半年</h2><p>从14年毕业至今，恍恍惚惚，已快4年的时间。当初毕业的时候，虽然不知道前途为何，但不管做什么事情总是充满了激情，到了现在，已经不敢说事事上心。<br>我常常反思自己，这些年来，飘飘扬扬、晃晃荡荡的度日，究竟有何收获？和我同龄的人或已结婚，生了小孩，或者事业有成，幸福美满，对比自己，多有不足，也就再也没有初出校园时那份豪气与激情了。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/gitblog/2018/02/22/2017年的回顾与2018年的展望/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -710,135 +501,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/gitblog/2018/02/01/我的第一篇微博post/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="林潼">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/gitblog/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="TongL1992">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/gitblog/2018/02/01/我的第一篇微博post/" itemprop="url">我的第一篇微博post</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-01T10:52:32+08:00">
-                2018-02-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="一般正文"><a href="#一般正文" class="headerlink" title="一般正文"></a>一般正文</h2><blockquote><p>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</p>
-</blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/gitblog/2018/02/01/我的第一篇微博post/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -846,6 +513,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -866,8 +537,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -929,6 +609,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、通知系统定义"><span class="nav-number">1.</span> <span class="nav-text">1、通知系统定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、通知分类"><span class="nav-number">2.</span> <span class="nav-text">2、通知分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、通知逻辑实现机制"><span class="nav-number">3.</span> <span class="nav-text">3、通知逻辑实现机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1通知合并"><span class="nav-number">3.1.</span> <span class="nav-text">3.1通知合并</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-1合并周期"><span class="nav-number">3.1.1.</span> <span class="nav-text">3.1.1合并周期</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-2分类合并"><span class="nav-number">3.1.2.</span> <span class="nav-text">3.1.2分类合并</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2通知分发"><span class="nav-number">3.2.</span> <span class="nav-text">3.2通知分发</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-1分发方式"><span class="nav-number">3.2.1.</span> <span class="nav-text">3.2.1分发方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-2分发频率（时间）"><span class="nav-number">3.2.2.</span> <span class="nav-text">3.2.2分发频率（时间）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-3分发管道"><span class="nav-number">3.2.3.</span> <span class="nav-text">3.2.3分发管道</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3用户处理"><span class="nav-number">3.3.</span> <span class="nav-text">3.3用户处理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-1状态的处理狭义的理解即为是否已读（处理）"><span class="nav-number">3.3.1.</span> <span class="nav-text">3.3.1状态的处理狭义的理解即为是否已读（处理）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-2内容的处理狭义的理解即为用户是否操作"><span class="nav-number">3.3.2.</span> <span class="nav-text">3.3.2内容的处理狭义的理解即为用户是否操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-3消息处理后的状态需要统一"><span class="nav-number">3.3.3.</span> <span class="nav-text">3.3.3消息处理后的状态需要统一</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4通知回收"><span class="nav-number">3.4.</span> <span class="nav-text">3.4通知回收</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-通知处理交互"><span class="nav-number">4.</span> <span class="nav-text">4.通知处理交互</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1新消息到达时提醒交互"><span class="nav-number">4.1.</span> <span class="nav-text">4.1新消息到达时提醒交互</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2通知处理"><span class="nav-number">4.2.</span> <span class="nav-text">4.2通知处理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-防骚扰（打扰）"><span class="nav-number">5.</span> <span class="nav-text">5.防骚扰（打扰）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1提供通知频率和渠道的管理功能"><span class="nav-number">5.1.</span> <span class="nav-text">5.1提供通知频率和渠道的管理功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2增加屏蔽功能"><span class="nav-number">5.2.</span> <span class="nav-text">5.2增加屏蔽功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3结合权限体系"><span class="nav-number">5.3.</span> <span class="nav-text">5.3结合权限体系</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3-1功能隐私设置"><span class="nav-number">5.3.1.</span> <span class="nav-text">5.3.1功能隐私设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3-2结合黑名单功能"><span class="nav-number">5.3.2.</span> <span class="nav-text">5.3.2结合黑名单功能</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-用户拉回"><span class="nav-number">6.</span> <span class="nav-text">6.用户拉回</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-总结"><span class="nav-number">7.</span> <span class="nav-text">7.总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1062,6 +758,10 @@
   
 
   
+  <script type="text/javascript" src="/gitblog/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/gitblog/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
